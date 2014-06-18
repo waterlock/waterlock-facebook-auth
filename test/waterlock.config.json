@@ -1,0 +1,18 @@
+{
+  "baseUrl": "app.example.com",
+  "authMethod": "waterlock-local-auth",
+  "passwordReset":{
+    "tokens": true,
+    "mail":{
+        "protocol": "SMTP",
+        "options":{},
+        "from": "",
+        "subject": "",
+        "forwardUrl": "somwhere.com"
+    },  
+    "template":{
+      "file": "email.test.jade",
+      "vars":{}
+    }
+  }
+}
