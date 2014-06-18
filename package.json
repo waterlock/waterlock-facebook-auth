@@ -22,7 +22,10 @@
   "devDependencies":{
     "mocha": "*",
     "should": "*",
-    "proxyquire": "*"
+    "proxyquire": "*",
+    "coveralls": "*",
+    "istanbul": "*",
+    "jshint": "*"
   },
   "author": "David Rivera <david.r.rivera193@gmail.com>",
   "license": "MIT",
