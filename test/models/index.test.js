@@ -1,4 +1,4 @@
-var model = require('../../lib/models/');
+var model = require('../../lib/models/').auth.attributes;
 
 describe('model', function(){
   it('should be an object', function(done){
