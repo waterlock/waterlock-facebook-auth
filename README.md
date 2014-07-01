@@ -14,11 +14,13 @@ npm install waterlock-facebook-auth
 set the following option in your `waterlock.json` config file
 
 ```json
-"authMethod":{
-	"name": "waterlock-facebook-auth",
-	"appKey": "your-app-key",
-	"appSecret": "your-app-secret"
-}
+"authMethod": [
+	{
+		"name": "waterlock-facebook-auth",
+		"appKey": "your-app-key",
+		"appSecret": "your-app-secret"
+	}
+]
 ```
 
 Direct your user to `/auth/login` will initiate the oauth request. The callback uri is `/auth/oauth2` if successfuly authenticated a user record will be created if a user is not found one will be created using the [waterlines](https://github.com/balderdashy/waterline) `findOrCreate` method
