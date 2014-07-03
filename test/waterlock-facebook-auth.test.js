@@ -3,7 +3,7 @@ var proxyquire =  require('proxyquire');
 
 var pathStub = {
   normalize: function(str){
-    return __dirname+"/waterlock.config.json";
+    return __dirname+"/waterlock.config.js";
   }
 };
 
