@@ -17,7 +17,8 @@
     "sails"
   ],
   "dependencies" : {
-    "request": "*"
+    "request": "*",
+    "lodash": "2.4.1"
   }, 
   "devDependencies":{
     "mocha": "*",
