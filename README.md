@@ -14,11 +14,11 @@ npm install waterlock-facebook-auth
 set the following option in your `waterlock.js` config file
 
 ```js
-"authMethod": [
+authMethod: [
 	{
-		"name": "waterlock-facebook-auth",
-		"appKey": "your-app-key",
-		"appSecret": "your-app-secret"
+		name: "waterlock-facebook-auth",
+		appId: "your-app-id",
+		appSecret: "your-app-secret"
 	}
 ]
 ```
