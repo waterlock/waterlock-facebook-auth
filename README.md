@@ -30,7 +30,7 @@ If you are using sails blueprints and have pluralized your REST API you can conf
 ```js
 module.exports.waterlock = {
   
-  pluralizeEndpoints = true
+  pluralizeEndpoints: true
   
 }
 ```
