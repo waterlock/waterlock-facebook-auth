@@ -25,12 +25,12 @@ authMethod: [
 
 Direct your user to `/auth/login?type=facebook` will initiate the oauth request. The callback uri is `/auth/facebook_oauth2` if successfuly authenticated a user record will be created if a user is not found one will be created using the [waterlines](https://github.com/balderdashy/waterline) `findOrCreate` method
 
-If you are using sails blueprints and have pluralized your REST API you can configure waterlock to pluralize the auth endpoints by including pluralize=true in the waterlock.js file:
+If you are using sails blueprints and have pluralized your REST API you can configure waterlock to pluralize the auth endpoints by including pluralizeEndpoints=true in the waterlock.js file:
 
 ```js
 module.exports.waterlock = {
   
-  pluralize = true
+  pluralizeEndpoints = true
   
 }
 ```
