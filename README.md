@@ -33,7 +33,7 @@ module.exports.waterlock = {
   pluralize = true
   
 }
-'''
+```
 
 
 
