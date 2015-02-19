@@ -35,5 +35,39 @@ module.exports.waterlock = {
 }
 ```
 
+### Grabbing Facebook field values
 
+By default, waterlock-facebook-auth stores the user's `facebookId`, `name` and `email` in the Auth model. In reality, Facebook returns more data than that. 
 
+To grab and store this, you will need to modify the add the fields in your `Auth.js` model...
+
+```js
+// api/models/Auth.js
+module.exports = {
+	attributes: require('waterlock').models.auth.attributes({
+		firstName: 'string',
+		lastName: 'string',
+		gender: 'string',
+		timezone: 'number'
+	})
+}
+```
+
+...and then add a `fieldMap` object within the facebook authMethod in your `waterlock.js` config file which matches your model's fields to facebook's fields.
+
+```js
+authMethod: [
+	{
+		name: "waterlock-facebook-auth",
+		appId: "your-app-id",
+		appSecret: "your-app-secret",
+		fieldMap: {
+			// <model-field>: <facebook-field>,
+			'firstName': 'first_name',
+			'lastName': 'last_name',
+			'gender': 'gender',
+			'timezone': 'timezone'
+		}
+	}
+]
+```
