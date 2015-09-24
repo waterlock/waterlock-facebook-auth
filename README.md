@@ -20,7 +20,8 @@ authMethod: [
 	{
 		name: "waterlock-facebook-auth",
 		appId: "your-app-id",
-		appSecret: "your-app-secret"
+		appSecret: "your-app-secret",
+		redirectUri: 'redirectUri'
 	}
 ]
 ```
