@@ -11,14 +11,17 @@ providing a facebook authentication method for users either based on username.
 npm install waterlock-facebook-auth
 ```
 
-set the following option in your `waterlock.js` config file
+Set the following option in your `waterlock.js` config file
+
+ - redirectUri is an optional property - use this if you want to override the computed redirectUri. This is useful for when you want to send an auth code to waterlock instead of having waterlock handle the entire auth flow for you. Useful for when you're developing an SPA which handles the authentication with something like Torii (EmberJs). See https://github.com/wayne-o/ember-waterlock-example - waterlock will validate the auth code with the provider and retrieve an access token which can be used to setup a session and return the JWT to your app
 
 ```js
 authMethod: [
 	{
 		name: "waterlock-facebook-auth",
 		appId: "your-app-id",
-		appSecret: "your-app-secret"
+		appSecret: "your-app-secret",
+		redirectUri: 'redirectUri'
 	}
 ]
 ```
@@ -29,15 +32,15 @@ If you are using sails blueprints and have pluralized your REST API you can conf
 
 ```js
 module.exports.waterlock = {
-  
+
   pluralizeEndpoints: true
-  
+
 }
 ```
 
 ### Grabbing Facebook field values
 
-By default, waterlock-facebook-auth stores the user's `facebookId`, `name` and `email` in the Auth model. In reality, Facebook returns more data than that. 
+By default, waterlock-facebook-auth stores the user's `facebookId`, `name` and `email` in the Auth model. In reality, Facebook returns more data than that.
 
 To grab and store this, you will need to modify the add the fields in your `Auth.js` model...
 
