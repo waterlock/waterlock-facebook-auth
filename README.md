@@ -1,6 +1,6 @@
 # Waterlock Facebook Auth
 
-[![Build Status](http://img.shields.io/travis/davidrivera/waterlock-facebook-auth.svg?style=flat)](https://travis-ci.org/davidrivera/waterlock-facebook-auth) [![NPM version](http://img.shields.io/npm/v/waterlock-facebook-auth.svg?style=flat)](http://badge.fury.io/js/waterlock-facebook-auth) [![Dependency Status](http://img.shields.io/gemnasium/davidrivera/waterlock-facebook-auth.svg?style=flat)](https://gemnasium.com/davidrivera/waterlock-facebook-auth)
+[![Build Status](http://img.shields.io/travis/waterlock/waterlock-facebook-auth.svg?style=flat)](https://travis-ci.org/waterlock/waterlock-facebook-auth) [![NPM version](http://img.shields.io/npm/v/waterlock-facebook-auth.svg?style=flat)](http://badge.fury.io/js/waterlock-facebook-auth) [![Dependency Status](http://img.shields.io/gemnasium/davidrivera/waterlock-facebook-auth.svg?style=flat)](https://gemnasium.com/davidrivera/waterlock-facebook-auth)
 
 waterlock-facebook-auth is a module for [waterlock](http://waterlock.ninja/)
 providing a facebook authentication method for users either based on username.
